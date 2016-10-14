@@ -16,7 +16,7 @@ var Module = function(args) {
 
 		commander.version('1.0.0');
 		commander.option('-l --log', 'redirect logs to file');
-		commander.option('-p --port <port>', 'listens to specified port', process.env.PORT);
+		commander.option('-p --port <port>', 'listens to specified port', 5000);
 		commander.parse(process.argv);
 
 		var args = ['port', 'log'];
