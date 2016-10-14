@@ -6,6 +6,9 @@ var cors = require('cors');
 var sprintf = require('yow').sprintf;
 var bodyParser = require('body-parser');
 var Model = require('./src/scripts/model.js');
+var redirectLogs = require('yow').redirectLogs;
+var prefixLogs = require('yow').prefixLogs;
+
 
 var Module = function(args) {
 
@@ -43,6 +46,13 @@ var Module = function(args) {
 	}
 
 	function init() {
+
+		prefixLogs();
+
+		if (args.log) {
+			redirectLogs();
+		}
+		
 		listen();
 
 	}

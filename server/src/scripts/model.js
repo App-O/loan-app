@@ -6,7 +6,7 @@ Model.Users = require('../model/users.js');
 Model.Clients = require('../model/clients.js');
 
 
-//Model.Users.belongsTo(Model.Clients, {foreignKey: 'client_id', onDelete: 'CASCADE', hooks:true});
+Model.Users.belongsTo(Model.Clients, {foreignKey: 'client_id', onDelete: 'CASCADE', hooks:true});
 
 
 Model.sync = function(options) {
