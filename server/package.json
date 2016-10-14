@@ -4,16 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-	"start": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
+    "commander": "^2.9.0",
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "mysql": "^2.11.1",
+    "sequelize": "^3.24.3",
     "yow": "^1.0.25"
   }
 }
