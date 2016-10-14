@@ -14,14 +14,20 @@ module.exports = function(request, response) {
 		else
 			text = error;
 
-		console.log('reply:', error);
+		console.log(error);
 		response.status(error.statusCode == undefined ? 404 : error.statusCode);
-		response.send(text);	
+		response.send(text);
 	}
 
 	self.reply = function(data) {
 		response.status(200).json(data);
 
+	}
+
+	self.authenticate = function() {
+		return new Promise(function(resolve, reject) {
+			resolve();
+		});
 	}
 
 
