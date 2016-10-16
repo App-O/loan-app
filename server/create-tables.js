@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-var express = require('express');
-var app = express();
-var cors = require('cors');
 var sprintf = require('yow').sprintf;
-var bodyParser = require('body-parser');
 var Model = require('./src/scripts/model.js');
 
 var Module = function(args) {
@@ -32,7 +28,7 @@ var Module = function(args) {
 
 		Model.sync({force:args.force}).then(function() {
 		})
-		
+
 		.catch(function(error) {
 			console.error(error);
 		});

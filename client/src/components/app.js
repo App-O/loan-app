@@ -15,7 +15,7 @@ var App = React.createClass({
 
     return (
 		<div className='app'>
-				{this.props.children}
+			{this.props.children}
     	</div>
     );
   }
@@ -28,6 +28,7 @@ ReactDOM.render((
 			<IndexRoute component={require('../pages/home/home.js')} />
 			<Route path="home"       component={require('../pages/home/home.js')} />
 			<Route path="about"      component={require('../pages/about/about.js')} />
+			<Route path="login"      component={require('../pages/login/login.js')} />
 		</Route>
 	</Router>
 ), document.getElementById('app'))
