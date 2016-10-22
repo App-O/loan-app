@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {IndexRoute, hashHistory, Router, Route} from 'react-router';
 
-import {Navbar,  CollapsibleNav, NavItem, Nav, MenuItem, NavDropdown} from 'react-bootstrap';
-
 
 require('../less/styles.less');
-require('./app.less');
-
 
 var App = React.createClass({
   render: function() {
@@ -25,7 +21,7 @@ var App = React.createClass({
 ReactDOM.render((
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
-			<IndexRoute component={require('../pages/home/home.js')} />
+			<IndexRoute component={require('../pages/about/about.js')} />
 			<Route path="home"       component={require('../pages/home/home.js')} />
 			<Route path="about"      component={require('../pages/about/about.js')} />
 			<Route path="login"      component={require('../pages/login/login.js')} />

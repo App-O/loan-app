@@ -42,7 +42,7 @@ module.exports = class Page extends React.Component {
 								<div style={{borderRadius:'4px', fontWeight:'bold', backgroundColor:'rgba(0,0,0,0.4)', color:'white', textAlign:'center', padding:'1em'}}>
 									<h2 style={{textTransform:'uppercase', padding:'0.5em', margin:'0', borderBottom:'1px solid white'}}>Min Fastighet</h2>
 									<h3 style={{paddingBottom:'1em'}}>Vi hjälper dig att förbättra dina lånevillkor!</h3>
-									<Button href='#/login' bsStyle="warning" style={{textTransform:'none'}}>
+									<Button href='#login' bsStyle="warning" style={{textTransform:'none'}}>
 										Klicka här för att logga in
 									</Button>
 								</div>

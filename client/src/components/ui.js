@@ -60,7 +60,7 @@ export class MainToolBar extends React.Component {
 				</Navbar.Header>
 				<Navbar.Collapse>
 					<Nav style={{fontSize:fontSize}}>
-						<NavItem eventKey={2} href="#">Om oss</NavItem>
+						<NavItem eventKey={2} href="#/about">Om oss</NavItem>
 						<NavItem eventKey={9} href="#">Vad gör vi?</NavItem>
 						<NavItem eventKey={10} href="#">Partners</NavItem>
 						<NavItem eventKey={11} href="#">Kontakt</NavItem>

@@ -28,7 +28,7 @@ module.exports = class Page extends React.Component {
 
 		return (
 			<Grid className='about' style={{fontSize:'14px'}}>
-
+				Om oss
 			</Grid>
 		);
 	}
