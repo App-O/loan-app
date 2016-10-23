@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron, Button, Grid, Row, Col, ListGroup, ListGroupItem, FormControl, ControlLabel, PageHeader} from 'react-bootstrap';
 import {sprintf, extend, isString, isObject, isArray, isNumber} from 'yow';
-import {BackgroundImage, MainToolBar} from '../../components/ui.js'
+import {Page} from '../../components/page.js'
 
 require('./login.less');
 
@@ -9,7 +9,7 @@ require('./login.less');
 
 
 
-module.exports = class Page extends React.Component {
+module.exports = class X extends React.Component {
 
 
 	constructor(props) {
@@ -47,10 +47,7 @@ module.exports = class Page extends React.Component {
 
 		return (
 			<div id='login'>
-				<BackgroundImage image={require('../home/images/bg.jpg')} >
-					<MainToolBar/>
-					<br/>
-					<br/>
+				<Page >
 					<Grid>
 						<Row>
 							<Col sm={8} smOffset={2} md={6} mdOffset={3} lg={6}>
@@ -73,9 +70,7 @@ module.exports = class Page extends React.Component {
 							</Col>
 						</Row>
 					</Grid>
-
-
-				</BackgroundImage>
+				</Page>
 			</div>
 		);
 	}

@@ -5,10 +5,10 @@ import {Page} from '../../components/page.js'
 
 import {sprintf} from 'yow';
 
-require('./about.less');
+require('./partners.less');
 
 
-module.exports = class AboutPage extends React.Component {
+module.exports = class ThisPage extends React.Component {
 
 
 	constructor(...args) {
@@ -28,27 +28,21 @@ module.exports = class AboutPage extends React.Component {
 		return (
 			<div style={style}>
 				<h3>
-					Om oss
+					Partners
 				</h3>
 				<h5>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula neque, finibus in turpis et, malesuada dignissim purus. Ut viverra massa leo, at sollicitudin velit auctor quis. Vestibulum quis orci rhoncus, gravida libero non, lobortis est. Quisque in tortor ut enim blandit vestibulum. Aliquam erat volutpat. Curabitur iaculis est iaculis.
 				</h5>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo.
-				</p>
 			</div>
 
 		);
 	}
 
 
-
-
-
 	render() {
 
 		return (
-			<Page bg={require('./images/bg.jpg')}>
+			<Page>
 				<Grid>
 					<Row>
 						<Col md={8} mdOffset={2}>

@@ -28,6 +28,10 @@ ReactDOM.render((
 			<Route path="login"         component={require('../pages/login/login.js')} />
 			<Route path="users"         component={require('../pages/users/users.js')} />
 			<Route path="user/:id"      component={require('../pages/user/user.js')} />
+			<Route path="what-we-do"    component={require('../pages/what-we-do/what-we-do.js')} />
+			<Route path="partners"      component={require('../pages/partners/partners.js')} />
+			<Route path="contact"       component={require('../pages/contact/contact.js')} />
+
 
 		</Route>
 	</Router>
