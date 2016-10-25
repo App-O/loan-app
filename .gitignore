@@ -1,4 +1,5 @@
 client/scripts
+.remote-sync.json
 
 # Logs
 logs
