@@ -3,14 +3,9 @@ import {Button, Jumbotron, Grid, Row, Col, ListGroup, ListGroupItem, Form, FormG
 import {Modal, Checkbox} from 'react-bootstrap';
 import {sprintf, extend, isString, isObject, isArray, isNumber} from 'yow';
 import {Page} from '../../components/page.js'
-
-var Bootstrap = require( 'react-bootstrap');
+import {BackgroundImage} from '../../components/background-image.js'
 
 require('./login.less');
-
-
-
-
 
 
 module.exports = class LoginPage extends React.Component {
@@ -23,7 +18,7 @@ module.exports = class LoginPage extends React.Component {
 		this.state = {};
 		this.state.vars = {};
 		this.state.vars.password = '';
-		this.state.vars.email = 'magus@egelberg.se';
+		this.state.vars.email = 'magnus@egelberg.se';
 		this.state.vars.foo = 'OLLE';
 
 	};
@@ -64,7 +59,7 @@ module.exports = class LoginPage extends React.Component {
 							<Col xs={12} sm={6} smOffset={3}>
 
 
-								<Form style={{borderRadius:'4px',backgroundColor:'rgba(255,255,255,0.9)', padding:'1em'}}>
+								<Form style={{borderRadius:'0.5em',backgroundColor:'rgba(255,255,255,0.9)', padding:'1em'}}>
 									<FormGroup bsSize='small'>
 										<FormControl.Static>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia tincidunt nunc a tempor. Praesent.
