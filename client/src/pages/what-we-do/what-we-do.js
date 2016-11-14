@@ -49,7 +49,7 @@ module.exports = class AboutPage extends React.Component {
 	render() {
 
 		return (
-			<Page bg={require('./images/bg.jpg')}>
+			<Page>
 				<Grid>
 					<Row>
 						<Col md={8} mdOffset={2}>

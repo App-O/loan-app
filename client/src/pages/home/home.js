@@ -27,19 +27,18 @@ module.exports = class Home extends React.Component {
 
 		return (
 			<Form style={{borderRadius:'0.75em',backgroundColor:'rgba(0,0,0,0.4)', padding:'1em'}}>
-				<FormGroup style={{borderBottom:'1px solid black'}}>
-					<h2 >
-						MIN FASTIGHET
+				<FormGroup style={{borderBottom:'1px solid white', textAlign:'center'}}>
+					<h2 style={{textTransform:'uppercase'}}>
+						Min Fastighet
 					</h2>
 				</FormGroup>
-				<FormGroup bsSize='small'>
-					<FormControl.Static>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia tincidunt nunc a tempor. Praesent.
-					</FormControl.Static>
-					<FormControl.Static>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula neque, finibus in turpis et, malesuada dignissim purus. Ut viverra massa leo, at sollicitudin velit auctor quis. Vestibulum quis orci rhoncus, gravida libero non, lobortis est. Quisque in tortor ut enim blandit vestibulum. Aliquam erat volutpat. Curabitur iaculis est iaculis.
-					</FormControl.Static>
-
+				<FormGroup>
+					<h3 style={{textAlign:'center'}}>Vi hjälper dig att förbättra dina lånevillkor!</h3>
+				</FormGroup>
+				<FormGroup style={{textAlign:'center'}}>
+					<Button href='#login' bsStyle="warning">
+						Logga In
+					</Button>
 				</FormGroup>
 
 
@@ -55,7 +54,8 @@ module.exports = class Home extends React.Component {
 
 
 		return (
-			<Page bg={require('./images/bg.jpg')}>
+			<div id="home">
+			<Page>
 				<Grid>
 					<Row>
 						<Col sm={10} smOffset={1} md={8} mdOffset={2}>
@@ -64,6 +64,7 @@ module.exports = class Home extends React.Component {
 					</Row>
 				</Grid>
 			</Page>
+			</div>
 
 		);
 
